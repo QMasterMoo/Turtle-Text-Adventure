@@ -12,8 +12,7 @@ import sys
 name = raw_input("What is your name? ")
 ##Uses the stringit function which makes the variable a string, which in this case is a name
 stringit(name)
-print "Hello " + name
-print"Hello, " + name + " are about to embark on a journey, get ready"
+print"Hello " + name + ", you are about to embark on a journey, get ready"
 
 #Timer, probably a better way to do this, but too lazy to do that, and enjoy doing this.
 #Disabled the timers for testing purposes, no need to wait so long for it.
@@ -40,41 +39,38 @@ print" "
 ##Makes move var into a string and lowercase for if block
 stringit(move)
 lowerit(move)
-##Uses the left_is_right function to make "Left" the right answer
-left_is_right(move)
-if move == "correct":
+if left_is_right(move) == "correct":
     #Sets up text for continuing
-    print"You continue through the cave, and find a door. You approach the door"
-elif move == "wrong":
+    print"You continue through the cave, and find a door. You approach the door."
+elif left_is_right(move) == "wrong":
     #Sets up text for being dead
-    print"You tripped on a ladybug and fell into a cactus, and died"
+    print"You tripped on a ladybug and fall into a cactus, and die."
+    time.sleep(3)
+    sys.exit()
 else:
     print"Fatal Error (420), was your spelling wrong?"
     time.sleep(2)
-    print"Bye"
-    time.sleep(1)
     sys.exit()
     
 #Moving onto the next part of the test story
-print"As you moves towards the door, they find a key"
-move = raw_input("Do they pick up the key or try to open the door? (Pick up or Leave there) ")
+print"As you move towards the door, you find a key."
+move = raw_input("Do you pick up the key or leave it there? (Pick up or Leave there) ")
 print" " #Another space
 stringit(move)
 lowerit(move)
-##Once again  testing the correctness of the move
-leavethere_is_right(move) 
-if move == "correct":
-    print"You bend over to pick up the key, and a giant hammer misses your head"
-    print name + "then stands back up"
-elif move == "wrong":
-    print"A giant hammer hits your head and completely misses you"
-    print"As you take deep breathes after your near death experience you stagger backwards"
-    print"As you walk backwards you trip over a ladybug and fall into a cactus"
+if pickup_is_right(move) == "correct":
+    print"You bend over to pick up the key, and a giant hammer misses your head."
+    print "You then stand back up."
+elif pickup_is_right(move) == "wrong":
+    print"A giant hammer aims for your head and completely misses you."
+    print"As you breath deeply after your near death experience you stagger backwards."
+    print"As you stagger backwards you trip over a ladybug and fall into a cactus."
+    print"You are now dead."
+    time.sleep(3)
+    sys.exit()
 else:
     print"Fatal Error (420), was your spelling wrong?"
     time.sleep(2)
-    print"Bye"
-    time.sleep(1)
     sys.exit()
     
 print"Over for now"

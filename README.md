@@ -13,6 +13,10 @@ This is one of the many Turtle based games, coming after the best selling atari 
 
 Really Tiny Changelog:
 
+==0.0.2== 9/8/13
+- Fixed the literally game breaking bug that prevented the game from working
+- Fixed several spelling and grammar errors since I changed stance halfway through
+
 ==0.0.1== 9/8/13 
 - Added in the core system on which the game will work
 - Created and broke the very first intro messages
