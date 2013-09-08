@@ -17,15 +17,15 @@ print"Hello " + name + ", you are about to embark on a journey, get ready"
 #Timer, probably a better way to do this, but too lazy to do that, and enjoy doing this.
 #Disabled the timers for testing purposes, no need to wait so long for it.
 time.sleep(0)
-print"5..."
+#print"5..."
 time.sleep(0)
-print"4..."
+#print"4..."
 time.sleep(0)
-print"3.."
+#print"3.."
 time.sleep(0)
-print"2.."
+#print"2.."
 time.sleep(0)
-print"1.."
+#print"1.."
 time.sleep(0)
 print"Why was there a loading screen in a python game? No clue, just go with it."
 time.sleep(1)
@@ -33,7 +33,7 @@ time.sleep(1)
 print" "
 
 #Moving along into actual award winning gameplay
-move = raw_input("You see a cave, it splits, which way do you head? (Left or Right) ")
+move = raw_input("You see a cave, it splits, which way do you head? (left or right) ")
 ##Adds a space between the lines
 print" "
 ##Makes move var into a string and lowercase for if block
@@ -54,7 +54,7 @@ else:
     
 #Moving onto the next part of the test story
 print"As you move towards the door, you find a key."
-move = raw_input("Do you pick up the key or leave it there? (Pick up or Leave there) ")
+move = raw_input("Do you pick up the key or leave it there? (pick up or leave there) ")
 print" " #Another space
 stringit(move)
 lowerit(move)
@@ -73,6 +73,7 @@ else:
     time.sleep(2)
     sys.exit()
     
+print""
 print"Over for now"
 
 
