@@ -44,8 +44,8 @@ if left_is_right(move) == "correct":
     print"You continue through the cave, and find a door. You approach the door."
 elif left_is_right(move) == "wrong":
     #Sets up text for being dead
-    print"You tripped on a ladybug and fall into a cactus, and die."
-    time.sleep(3)
+    print"You trip on a ladybug, fall into a cactus, and die."
+    time.sleep(5)
     sys.exit()
 else:
     print"Fatal Error (420), was your spelling wrong?"
@@ -66,7 +66,7 @@ elif pickup_is_right(move) == "wrong":
     print"As you breath deeply after your near death experience you stagger backwards."
     print"As you stagger backwards you trip over a ladybug and fall into a cactus."
     print"You are now dead."
-    time.sleep(3)
+    time.sleep(10)
     sys.exit()
 else:
     print"Fatal Error (420), was your spelling wrong?"
