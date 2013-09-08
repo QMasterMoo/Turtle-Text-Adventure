@@ -13,7 +13,13 @@ This is one of the many Turtle based games, coming after the best selling atari 
 
 Really Tiny Changelog:
 
-==0.0.0==
+==0.0.1== 9/8/13 
+- Added in the core system on which the game will work
+- Created and broke the very first intro messages
+- This version DOES NOT WORK, but has enough change to be apart of the changelog
+- Added .gitignore back, kind of figured out what it did
+
+==0.0.0== 9/7/13
 - Initial Creation of the game
 - Liscense, and Readme added, as well as .gitignore removed (not really sure what it does)
 - Readme also changed (3rd Commit)
