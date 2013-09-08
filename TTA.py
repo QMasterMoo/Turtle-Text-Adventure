@@ -26,9 +26,9 @@ time.sleep(0)
 #print"2.."
 time.sleep(0)
 #print"1.."
-time.sleep(0)
-print"Why was there a loading screen in a python game? No clue, just go with it."
-time.sleep(1)
+time.sleep(3)
+print"Loading Complete"
+time.sleep(2)
 ##Adds a space between lines
 print" "
 
@@ -74,6 +74,7 @@ else:
     sys.exit()
     
 print""
-print"Over for now"
+print"Temporary end"
+time.sleep(10)
 
 
