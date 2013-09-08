@@ -16,6 +16,7 @@ Really Tiny Changelog:
 ==0.0.3== 9/8/13
 - First successful compilation of the code
 - Now released to the first Alpha-Beta-Indev-Charlie testers
+- Couple spelling/grammar errors fixed
 
 ==0.0.2== 9/8/13
 - Fixed the literally game breaking bug that prevented the game from working
