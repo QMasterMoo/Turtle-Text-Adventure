@@ -30,26 +30,6 @@ elif menufunc(menu) == "how to play":
     print"There are short timers that will allow for you to read the wrong answers before closing and error messages"
     #Variable that is random that will wait for enter to continue
     blank = raw_input("Press enter to continue to game start... ")
-    """ Continues into more in depth help, but obviously there is nothing more to know, so it is disabled.
-    #Continues very basic help into more technical things. Is only written now and will be hidden
-    continuehtp = raw_input("If you would like to continue through How to Play please answer yes or no. ")
-    stringit(continuehtp)
-    lowerit(continuehtp)
-    if yes_or_no(continuehtp) == "yes":
-        print""
-        time.sleep(5)
-    elif yes_or_no(continuehtp) == "no":
-        print"The game will now be started"
-    else:
-        print"There was an error (420-0), but the game will still be started"
-        print" "
-    """
-"""#Error message part of game
-elif menufunc(menu) == "error messages":
-    print"Please check GitHub wiki for more info on errors"
-    print"Game will be started in 3 seconds"
-    print" "
-    time.sleep(3)"""
 #Error message, game continues.
 else:
     print"An error has occurred in the menu (69-0), the game will start after a 3 second pause"
