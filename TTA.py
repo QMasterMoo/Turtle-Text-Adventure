@@ -11,13 +11,26 @@ import sys
 #Attempt at starting a menu (going to be a long one, going to be a lot of things)
 #Nothing is really going to change until I try to get my ideas written
 print"Welcome to Turtle-Text-Adventure"
-print"Please answer all questions with one of the options in the parentheses and check spelling"
+#print"Please answer all questions with one of the options in the parentheses and check spelling"""
 #######Break between temp intro and menu
-"""
+
 print"What would you like to do?"
 menu = raw_input("Your options are: Start Game, How to play, and Error Messages. Please type in your answer and hit enter. ")
 stringit(menu)
 lowerit(menu)
+#Starts menu module
+"""if menufunc(menu) == "starting game":
+    print"The game is now starting"
+    print" "
+    time.sleep(1)
+elif menufunc(menu) == "how to play":
+    print"How To Play"
+    time.sleep(3)
+    sys.exit
+else:
+    sys.exit()"""
+
+
 if menufunc(menu) == "starting game":
     print"The game is now starting"
     print" "
@@ -28,29 +41,33 @@ elif menufunc(menu) == "how to play":
     print"You will be told if your answer is right or wrong with a short story that will either end the game if its wrong or continue it if it is correct"
     print"There are short timers that will allow for you to read the wrong answers before closing and error messages"
     #Variable that is random that will wait for enter to continue
-    blank = raw_input("Press enter to continue... ")
+    blank = raw_input("Press enter to continue to game start... ")
+    """ Continues into more in depth help, but obviously there is nothing more to know, so it is disabled.
     #Continues very basic help into more technical things. Is only written now and will be hidden
-    continuehtp = raw_input("If you would like to continue please answer yes or no. ")
+    continuehtp = raw_input("If you would like to continue through How to Play please answer yes or no. ")
     stringit(continuehtp)
     lowerit(continuehtp)
     if yes_or_no(continuehtp) == "yes":
-        print"Filler, then 5 second wait before continuing until later"
+        print""
         time.sleep(5)
     elif yes_or_no(continuehtp) == "no":
         print"The game will now be started"
     else:
         print"There was an error (420-0), but the game will still be started"
         print" "
+    """
 #Error message part of game
 elif menufunc(menu) == "error messages":
-    print"To be written later the game will start in 3 seconds"#    time.sleep(3)
+    print"Please check GitHub wiki for more info on errors"
+    print"Game will be started in 3 seconds"
     print" "
+    time.sleep(3)
 #Error message, game continues.
 else:
     print"An error has occurred in the menu (69-0), the game will start after a 3 second pause"
     print" "
-   time.sleep(3)
-   """
+    time.sleep(3)
+
 
 #Starts the story and asks for name
 name = raw_input("What is your name? ")

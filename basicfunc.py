@@ -57,19 +57,23 @@ def leavethere_is_right(i): #Function for making the "Leave there" option correc
         return "error 420"
     
 def yes_or_no(i): #Function returning yes or no
-    if i == "yes" or "y":
+    #OR statement removed due to it breaking the block
+    #Will fix soonish
+    if i == "yes": #or "y":
         return "yes"
-    elif i =="no" or "n":
+    elif i =="no": #or "n":
         return "no"
     else:
         return "error 420"
     
 def menufunc(i): #Function managing menu
-    if i == "continue" or "start game":
+    #OR statement removed to it breaking the block
+    #Will fix soonish
+    if i == "start game": #or "continue":
         return "starting game"
-    elif i == "how to play" or "htp":
+    elif i == "how to play": #or "htp":
         return "how to play"
-    elif i == "error messages" or "errors" or "error" or "em":
+    elif i == "error messages": #or "errors" or "error" or "em":
         return "error messages"
     else:
         return "Error 69"
