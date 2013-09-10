@@ -73,7 +73,7 @@ def menufunc(i): #Function managing menu
         return "starting game"
     elif i == "how to play": #or "htp":
         return "how to play"
-    elif i == "error messages": #or "errors" or "error" or "em":
+"""    elif i == "error messages": #or "errors" or "error" or "em":"""
         return "error messages"
     else:
         return "Error 69"

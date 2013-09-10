@@ -44,12 +44,12 @@ elif menufunc(menu) == "how to play":
         print"There was an error (420-0), but the game will still be started"
         print" "
     """
-#Error message part of game
+"""#Error message part of game
 elif menufunc(menu) == "error messages":
     print"Please check GitHub wiki for more info on errors"
     print"Game will be started in 3 seconds"
     print" "
-    time.sleep(3)
+    time.sleep(3)"""
 #Error message, game continues.
 else:
     print"An error has occurred in the menu (69-0), the game will start after a 3 second pause"
