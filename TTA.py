@@ -48,8 +48,8 @@ elif left_is_right(move) == "wrong":
     time.sleep(5)
     sys.exit()
 else:
-    print"Fatal Error (420), was your spelling wrong?"
-    time.sleep(2)
+    print"Fatal Error (420-1), was your spelling wrong?"
+    time.sleep(3)
     sys.exit()
     
 #Moving onto the next part of the test story
@@ -63,18 +63,39 @@ if pickup_is_right(move) == "correct":
     print "You then stand back up."
 elif pickup_is_right(move) == "wrong":
     print"A giant hammer aims for your head and completely misses you."
-    print"As you breath deeply after your near death experience you stagger backwards."
+    print"As you breathe deeply after your near death experience you stagger backwards."
     print"As you stagger backwards you trip over a ladybug and fall into a cactus."
+    print"You are now dead."
+    time.sleep(20)
+    sys.exit()
+else:
+    print"Fatal Error (420-2), was your spelling wrong?"
+    time.sleep(3)
+    sys.exit()
+    
+#Moveing onto another part that simply extends the story
+print"After narrowly escaping death, you stand back up against better judgment."
+move = raw_input("When standing up, you realize you left the key there, do you (pick up or leave there)? ")
+#Extra space
+print" "
+stringit(move)
+lowerit(move)
+if pickup_is_right(move) == "correct":
+    print"You bend over and try to pick up the key. You find that the key is glued to the ground"
+    print"As you try to pry it off the ground, the hammer comes back for a second time and narrowly misses your head."
+elif pickup_is_right(move) == "wrong":
+    print"The hammer comes back down and hits you in the head. (Seriously, it will come back down... eventually)"
     print"You are now dead."
     time.sleep(10)
     sys.exit()
 else:
-    print"Fatal Error (420), was your spelling wrong?"
-    time.sleep(2)
+    print"Fatal Error (420-3), was your spelling wrong?"
+    time.sleep(3)
     sys.exit()
     
-print""
-print"Temporary end"
-time.sleep(10)
-
+#Temp End
+print"Time freezes, and waits for another update"
+time.sleep(5)
+sys.exit()
+    
 

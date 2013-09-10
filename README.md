@@ -13,6 +13,12 @@ This is one of the many Turtle based games, coming after the best selling atari 
 
 Really Tiny Changelog:
 
+==0.0.4== 9/18/13
+- Added another section to the story, since turtle has yet to even write.  Playing it by ear.
+- Added a wiki page on the github page to answer the error messageS
+- May add ASCII art later to enhance gameplay (Pls no complan)
+- Fixed some spacing
+
 ==0.0.3== 9/8/13
 - First successful compilation of the code
 - Now released to the first Alpha-Beta-Indev-Charlie testers
