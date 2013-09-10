@@ -15,22 +15,10 @@ print"Welcome to Turtle-Text-Adventure"
 #######Break between temp intro and menu
 
 print"What would you like to do?"
-menu = raw_input("Your options are: Start Game, How to play, and Error Messages. Please type in your answer and hit enter. ")
+menu = raw_input("Your options are: Start Game and How to play. ")
 stringit(menu)
 lowerit(menu)
 #Starts menu module
-"""if menufunc(menu) == "starting game":
-    print"The game is now starting"
-    print" "
-    time.sleep(1)
-elif menufunc(menu) == "how to play":
-    print"How To Play"
-    time.sleep(3)
-    sys.exit
-else:
-    sys.exit()"""
-
-
 if menufunc(menu) == "starting game":
     print"The game is now starting"
     print" "
