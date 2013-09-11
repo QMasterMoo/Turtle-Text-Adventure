@@ -15,7 +15,7 @@ print"Welcome to Turtle-Text-Adventure"
 #######Break between temp intro and menu
 
 print"What would you like to do?"
-menu = raw_input("Your options are: Start Game and How to play. ")
+menu = raw_input("Your options are: start game and how to play. ")
 stringit(menu)
 lowerit(menu)
 #Starts menu module
@@ -112,6 +112,8 @@ lowerit(move)
 if pickup_is_right(move) == "correct":
     print"You bend over and try to pick up the key. You find that the key is glued to the ground"
     print"As you try to pry it off the ground, the hammer comes back for a second time and narrowly misses your head."
+    #Temp sleep
+    time.sleep(10)
 elif pickup_is_right(move) == "wrong":
     print"The hammer comes back down and hits you in the head. (Seriously, it will come back down... eventually)"
     print"You are now dead."
