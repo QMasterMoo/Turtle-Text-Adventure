@@ -8,12 +8,12 @@ from basicfunc import *
 import time
 import sys
 
-sleepn1 = 0
-sleep1 = 0
-sleep3 = 0
-sleep5 = 0
-sleep10 = 00
-sleep20 = 00
+sleepn1 = -1
+sleep1 = 1
+sleep3 = 3
+sleep5 = 5
+sleep10 = 10
+sleep20 = 20
 
 
 #Attempt at starting a menu (going to be a long one, going to be a lot of things)
