@@ -8,11 +8,13 @@ from basicfunc import *
 import time
 import sys
 
+sleepn1 = 0
 sleep1 = 0
 sleep3 = 0
 sleep5 = 0
 sleep10 = 00
 sleep20 = 00
+
 
 #Attempt at starting a menu (going to be a long one, going to be a lot of things)
 #Nothing is really going to change until I try to get my ideas written
@@ -50,17 +52,16 @@ stringit(name)
 print"Hello " + name + ", you are about to embark on a journey, get ready"
 
 #Timer, probably a better way to do this, but too lazy to do that, and enjoy doing this.
-#Disabled the timers for testing purposes, no need to wait so long for it.
 time.sleep(sleep1)
-#print"5..."
+print"5..."
 time.sleep(sleep1)
-#print"4..."
+print"4..."
 time.sleep(sleep1)
-#print"3.."
+print"3.."
 time.sleep(sleep1)
-#print"2.."
+print"2.."
 time.sleep(sleep1)
-#print"1.."
+print"1.."
 time.sleep(sleep3)
 print"Loading Complete"
 time.sleep(sleep3)
@@ -80,11 +81,11 @@ if left_is_right(move) == "correct":
 elif left_is_right(move) == "wrong":
     #Sets up text for being dead
     print"You trip on a ladybug, fall into a cactus, and die."
-    time.sleep(sleep5)
+    time.sleep(sleepn1)
     sys.exit()
 else:
     print"Fatal Error (420-1), was your spelling wrong?"
-    time.sleep(sleep3)
+    time.sleep(sleepn1)
     sys.exit()
     
 #Moving onto the next part of the test story
@@ -101,11 +102,11 @@ elif pickup_is_right(move) == "wrong":
     print"As you breathe deeply after your near death experience you stagger backwards."
     print"As you stagger backwards you trip over a ladybug and fall into a cactus."
     print"You are now dead."
-    time.sleep(sleep20)
+    time.sleep(sleepn1)
     sys.exit()
 else:
     print"Fatal Error (420-2), was your spelling wrong?"
-    time.sleep(sleep3)
+    time.sleep(sleepn1)
     sys.exit()
     
 #Moveing onto another part that simply extends the story
