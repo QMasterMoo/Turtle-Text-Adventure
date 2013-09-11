@@ -1,6 +1,5 @@
 #Should handle most of the default functions that will come back throughout
 
-
 def lowerit(i): #Makes the input lowercase for if blocks
     return i.lower()
 
