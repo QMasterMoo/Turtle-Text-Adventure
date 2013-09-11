@@ -15,7 +15,6 @@ def left_is_right(i): #Function for making the "Left" direction correct
     else:
         return "error (420)"
     
-
 def right_is_right(i): #Function for making the "Right" direction correct
     if i == "left":
         return "wrong"
