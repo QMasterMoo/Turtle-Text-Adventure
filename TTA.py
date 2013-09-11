@@ -8,6 +8,12 @@ from basicfunc import *
 import time
 import sys
 
+sleep1 = 0
+sleep3 = 0
+sleep5 = 0
+sleep10 = 00
+sleep20 = 00
+
 #Attempt at starting a menu (going to be a long one, going to be a lot of things)
 #Nothing is really going to change until I try to get my ideas written
 print"Welcome to Turtle-Text-Adventure"
@@ -22,7 +28,7 @@ lowerit(menu)
 if menufunc(menu) == "starting game":
     print"The game is now starting"
     print" "
-    time.sleep(1)
+    time.sleep(sleep1)
 elif menufunc(menu) == "how to play":
     print"You simply respond to statements and questions with one of the options in the parentheses"
     print"If the question/statement is \"Which way do you choose? (left or right)\" you could respond with anything in the parentheses"
@@ -34,7 +40,7 @@ elif menufunc(menu) == "how to play":
 else:
     print"An error has occurred in the menu (69-0), the game will start after a 3 second pause"
     print" "
-    time.sleep(3)
+    time.sleep(sleep3)
 
 
 #Starts the story and asks for name
@@ -45,19 +51,19 @@ print"Hello " + name + ", you are about to embark on a journey, get ready"
 
 #Timer, probably a better way to do this, but too lazy to do that, and enjoy doing this.
 #Disabled the timers for testing purposes, no need to wait so long for it.
-time.sleep(0)
+time.sleep(sleep1)
 #print"5..."
-time.sleep(0)
+time.sleep(sleep1)
 #print"4..."
-time.sleep(0)
+time.sleep(sleep1)
 #print"3.."
-time.sleep(0)
+time.sleep(sleep1)
 #print"2.."
-time.sleep(0)
+time.sleep(sleep1)
 #print"1.."
-time.sleep(3)
+time.sleep(sleep3)
 print"Loading Complete"
-time.sleep(2)
+time.sleep(sleep3)
 ##Adds a space between lines
 print" "
 
@@ -74,11 +80,11 @@ if left_is_right(move) == "correct":
 elif left_is_right(move) == "wrong":
     #Sets up text for being dead
     print"You trip on a ladybug, fall into a cactus, and die."
-    time.sleep(5)
+    time.sleep(sleep5)
     sys.exit()
 else:
     print"Fatal Error (420-1), was your spelling wrong?"
-    time.sleep(3)
+    time.sleep(sleep3)
     sys.exit()
     
 #Moving onto the next part of the test story
@@ -95,11 +101,11 @@ elif pickup_is_right(move) == "wrong":
     print"As you breathe deeply after your near death experience you stagger backwards."
     print"As you stagger backwards you trip over a ladybug and fall into a cactus."
     print"You are now dead."
-    time.sleep(20)
+    time.sleep(sleep20)
     sys.exit()
 else:
     print"Fatal Error (420-2), was your spelling wrong?"
-    time.sleep(3)
+    time.sleep(sleep3)
     sys.exit()
     
 #Moveing onto another part that simply extends the story
@@ -113,20 +119,20 @@ if pickup_is_right(move) == "correct":
     print"You bend over and try to pick up the key. You find that the key is glued to the ground"
     print"As you try to pry it off the ground, the hammer comes back for a second time and narrowly misses your head."
     #Temp sleep
-    time.sleep(10)
+    time.sleep(sleep10)
 elif pickup_is_right(move) == "wrong":
     print"The hammer comes back down and hits you in the head. (Seriously, it will come back down... eventually)"
     print"You are now dead."
-    time.sleep(10)
+    time.sleep(sleep10)
     sys.exit()
 else:
     print"Fatal Error (420-3), was your spelling wrong?"
-    time.sleep(3)
+    time.sleep(sleep3)
     sys.exit()
     
 #Temp End
 print"Time freezes, and waits for another update"
-time.sleep(5)
+time.sleep(sleep5)
 sys.exit()
     
 
