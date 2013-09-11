@@ -8,6 +8,7 @@ from basicfunc import *
 import time
 import sys
 
+#Sleep countdown timers, change to 0 for testing
 sleepn1 = -1
 sleep1 = 1
 sleep3 = 3
@@ -15,6 +16,8 @@ sleep5 = 5
 sleep10 = 10
 sleep20 = 20
 
+#Defines blank variable for no reason other than caution
+blank = "doesn't matter"
 
 #Attempt at starting a menu (going to be a long one, going to be a lot of things)
 #Nothing is really going to change until I try to get my ideas written
@@ -81,11 +84,11 @@ if left_is_right(move) == "correct":
 elif left_is_right(move) == "wrong":
     #Sets up text for being dead
     print"You trip on a ladybug, fall into a cactus, and die."
-    time.sleep(sleepn1)
+    blank = raw_input("Press Enter to close...")
     sys.exit()
 else:
     print"Fatal Error (420-1), was your spelling wrong?"
-    time.sleep(sleepn1)
+    blank = raw_input("Press Enter to close...")
     sys.exit()
     
 #Moving onto the next part of the test story
@@ -102,11 +105,11 @@ elif pickup_is_right(move) == "wrong":
     print"As you breathe deeply after your near death experience you stagger backwards."
     print"As you stagger backwards you trip over a ladybug and fall into a cactus."
     print"You are now dead."
-    time.sleep(sleepn1)
+    blank = raw_input("Press Enter to close...")
     sys.exit()
 else:
     print"Fatal Error (420-2), was your spelling wrong?"
-    time.sleep(sleepn1)
+    blank = raw_input("Press Enter to close...")
     sys.exit()
     
 #Moveing onto another part that simply extends the story
@@ -124,11 +127,11 @@ if pickup_is_right(move) == "correct":
 elif pickup_is_right(move) == "wrong":
     print"The hammer comes back down and hits you in the head. (Seriously, it will come back down... eventually)"
     print"You are now dead."
-    time.sleep(sleep10)
+    blank = raw_input("Press Enter to close...")
     sys.exit()
 else:
     print"Fatal Error (420-3), was your spelling wrong?"
-    time.sleep(sleep3)
+    blank = raw_input("Press Enter to close...")
     sys.exit()
     
 #Temp End
