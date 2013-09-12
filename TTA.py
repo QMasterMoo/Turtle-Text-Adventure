@@ -27,7 +27,7 @@ print"Welcome to Turtle-Text-Adventure"
 #######Break between temp intro and menu
 
 print"What would you like to do?"
-menu = raw_input("Your options are: start game and how to play. ")
+menu = raw_input("Your options are: start game and how to play ")
 stringit(menu)
 lowerit(menu)
 #Starts menu module
