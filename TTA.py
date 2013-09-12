@@ -39,6 +39,7 @@ elif menufunc(menu) == "how to play":
     print"If the question/statement is \"Which way do you choose? (left or right)\" you could respond with anything in the parentheses"
     print"You will be told if your answer is right or wrong with a short story that will either end the game if its wrong or continue it if it is correct"
     print"There are short timers that will allow for you to read the wrong answers before closing and error messages"
+    print" "
     #Variable that is random that will wait for enter to continue
     blank = raw_input("Press enter to continue to game start... ")
 #Error message, game continues.
@@ -75,7 +76,7 @@ print" "
 print"Your alarm clock goes off, it is 6:47 a.m."
 print"You think you yourself, why did that go off so early?"
 print"Work starts at 8:30 a.m., you have about an hour to get ready."
-move = raw_input("You turn over and see your alarm clock, do you (hit snooze or get up) ")
+move = raw_input("You turn over and see your alarm clock, do you (hit snooze or wake up) ")
 stringit(move)
 lowerit(move)
 #Starting main if block, see 'example structure.py' for better examples
