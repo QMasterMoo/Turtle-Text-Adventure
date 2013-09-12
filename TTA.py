@@ -26,28 +26,46 @@ print"Welcome to Turtle-Text-Adventure"
 #print"Please answer all questions with one of the options in the parentheses and check spelling"""
 #######Break between temp intro and menu
 
-print"What would you like to do?"
-menu = raw_input("Your options are: start game and how to play ")
-stringit(menu)
-lowerit(menu)
+"""print"What would you like to do?"
+menu = raw_input("Your options are: start game and how to play ")"""
+#Defines blank variable for no reason other than caution
+blank = "doesn't matter"
+menu_correct = False
+ 
+ 
+ 
 #Starts menu module
-if menufunc(menu) == "starting game":
-    print"The game is now starting"
+#Dom rewrote menu function, and fixed a lot of spacing.
+while not menu_correct:
     print" "
-    time.sleep(sleep1)
-elif menufunc(menu) == "how to play":
-    print"You simply respond to statements and questions with one of the options in the parentheses"
-    print"If the question/statement is \"Which way do you choose? (left or right)\" you could respond with anything in the parentheses"
-    print"You will be told if your answer is right or wrong with a short story that will either end the game if its wrong or continue it if it is correct"
-    print"There are short timers that will allow for you to read the wrong answers before closing and error messages"
+    print"What would you like to do?"
     print" "
+    menu = raw_input("Your options are: 'start game' and 'how to play': ")
+    if menufunc(menu) == "starting game":
+        print" "
+        print"The game is now starting......."
+        print" "
+        menu_correct = True
+        time.sleep(sleep1)
+    elif menufunc(menu) == "how to play":
+        print" "
+        print"You simply respond to statements and questions with one of the options in the parentheses."
+        print" "
+        print"If the question/statement is \"Which way do you choose? (left or right)\" you would respond with either 'left' or 'right (without parenthesis)"
+        print" "
+        print"You will be told if your answer is right or wrong with a short story that will either end the game if its wrong or continue it if it is correct"
+        print" "
+        print"There are short timers that will allow for you to read the wrong answers before closing and error messages"
+        print" "
     #Variable that is random that will wait for enter to continue
-    blank = raw_input("Press enter to continue to game start... ")
+        menu_correct = True
+        blank = raw_input("Press enter to continue to game start... ")
+        print" "
 #Error message, game continues.
-else:
-    print"An error has occurred in the menu (69-0), the game will start after a 3 second pause"
-    print" "
-    time.sleep(sleep3)
+    else:
+        print"You did not enter a valid menu choice. Please choose again."
+        print" "
+        time.sleep(sleep3)
 
 
 #Starts the story and asks for name
