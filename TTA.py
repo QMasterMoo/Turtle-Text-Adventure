@@ -120,7 +120,7 @@ if leavethere_is_right(move) == "correct":
 elif leavethere_is_right(move) == "wrong":
     #System for more than one option using random numbers
     rint = random()
-    if rint > 0 and rint < .5:
+    if rint > 0 and rint < .25:
         print"You start to brush your teeth, everything is fine"
         print"You continue through your day as normal"
         print"Months later, you die of bird flu"
