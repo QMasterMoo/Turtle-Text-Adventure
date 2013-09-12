@@ -55,6 +55,11 @@ while not menu_correct:
         menu_correct = True
         blank = raw_input("Press enter to continue to game start... ")
         print" "
+    elif menufunc(menu) == "passcode":
+        pc = raw_input("Enter passcode here: ")
+        stringit(pc)
+        print" "
+        menu_correct = True
 #Error message, game continues.
     else:
         print"You did not enter a valid menu choice. Please choose again."
@@ -85,26 +90,37 @@ print"Loading Complete"
 time.sleep(sleep3)
 ##Adds a space between lines
 print" "
+print" "
 
 
-#Start of game with wake up sequence
-print"Your alarm clock goes off, it is 6:47 a.m."
-print"You think to you yourself, why did that go off so early?"
-print"Work starts at 8:30 a.m., you have about an hour to get ready."
-move = raw_input("You turn over and see your alarm clock, do you (hit snooze or wake up) ")
 #While Variable for the while block
+#If it's false, it will continue to the story, but if true it will blow through it until the game changes it again to false
+#This is the basis of a code based password system
+#Block 1
 wvar = False
+if pc == "1":
+    print"Starting at block 1"
+    print" "
+else:
+    wvar = True
+    
 while not wvar:
+    #Start of game with wake up sequence
+    print"Your alarm clock goes off, it is 6:47 a.m."
+    print"You think to you yourself, why did that go off so early?"
+    print"Work starts at 8:30 a.m., you have about an hour to get ready."
+    move = raw_input("You turn over and see your alarm clock, do you (hit snooze or wake up) ")
     #Starting main if block, see 'example structure.py' for better examples
     if wake_up_is_right(move) == "correct": 
         print"You stand up, and walk towards the bathroom door"
+        wvar = True
     elif wake_up_is_right(move) == "wrong":
-            print"You lean over, and hit snooze on your alarm clock"
-            print"As you hit snooze, your arms falls off"
-            print"You bleed to death and die."
-            print"You are now dead"
-            blank = raw_input("Press Enter to close...")
-            sys.exit()
+        print"You lean over, and hit snooze on your alarm clock"
+        print"As you hit snooze, your arms falls off"
+        print"You bleed to death and die."
+        print"You are now dead"
+        blank = raw_input("Press Enter to close...")
+        sys.exit()
     else:
         print"Error (420-1), was your spelling right?"
         blank = raw_input("Press Enter to close...")
@@ -112,13 +128,21 @@ while not wvar:
         print" "
 
 
-#Start of bathroom sequence
-print"After stumbling towards the bathroom door, you are confronted with an issue"
-move = raw_input("Do you (open or keep closed)? ")
+#Block 2
 wvar = False
+if pc == "2":
+    print"Starting at block 2"
+    print" "
+else:
+    wvar = True
+
 while not wvar:
+    #Start of bathroom sequence
+    print"After stumbling towards the bathroom door, you are confronted with an issue"
+    move = raw_input("Do you (open or keep closed)? ")
     if open_is_right(move) == "correct":
         print"You open the door, and move into the bathroom uneventfully"
+        wvar = True
     elif open_is_right(move) == "wrong":
         print"You run away and fall down your stairs breaking your neck"
         print"You live in a 1 story no basement house"
@@ -132,14 +156,18 @@ while not wvar:
         print" "
 
 
-#Part 2 of bathroom sequence
-print"After entering the bathroom, you notice your toothbrush"
-print"You look at your toothbrush"
-move = raw_input("You ponder, then decide to (pick up or leave there) ")
+#Block 3
 wvar = False
+if pc == "3":
+    print"Starting at block 3"
+    print" "
+else:
+    wvar = True
+    
 while not wvar:
     if leavethere_is_right(move) == "correct":
         print"You notice that the toothbrush has bird poop on it, and leave it there"
+        wvar = True
     elif leavethere_is_right(move) == "wrong":
         #System for more than one option using random numbers
         rint = random()
@@ -165,13 +193,21 @@ while not wvar:
 print" "
 
 
-#Part 3 of bathroom sequence
-print"Being disgusted with the toothbrush, you notice the shower and a box of kellogs brand pop tarts"
-move = raw_input("What do you want to do with the shower (turn on or keep off)? ")
+#Block 4
 wvar = False
+if pc == "4":
+    print"Starting at block 4"
+    print" "
+else:
+    wvar = True
+    
 while not wvar:
+    #Part 3 of bathroom sequence
+    print"Being disgusted with the toothbrush, you notice the shower and a box of kellogs brand pop tarts"
+    move = raw_input("What do you want to do with the shower (turn on or keep off)? ")
     if keep_off_is_right(move) == "correct":
         print"You ignore the shower, and continue searching"
+        wvar = True
     elif keep_off_is_right(move) == "wrong":
         print"You turn on the shower, and get in"
         print"After washing off, you die"
@@ -182,7 +218,7 @@ while not wvar:
         print"Error (420-4), was your spelling right?"
         blank = raw_input("Press Enter to close...")   
         sys.exit()
- 
+print" " 
     
 print"Temp end"
 blank = raw_input("Press Enter to close...")   

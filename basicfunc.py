@@ -87,6 +87,8 @@ def menufunc(i): #Function managing menu
         return "starting game"
     elif i == "how to play": #or "htp":
         return "how to play"
+    elif i == "passcode" or i =="pc":
+        return "passcode"
     else:
         return "Error (69)"
 
