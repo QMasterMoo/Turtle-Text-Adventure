@@ -73,3 +73,27 @@ def menufunc(i): #Function managing menu
         return "how to play"
     else:
         return "Error 69"
+
+def wake_up_is_right(i): #Wake up sequence function
+    if i == "wake up":
+        return "correct"
+    elif i == "hit snooze":
+        return "wrong"
+    else:
+        return "error (420)"
+
+def open_is_right(i): #Door open function
+    if i == "open":
+        return "correct"
+    elif i == "keep closed":
+        return "wrong"
+    else:
+        return "error (420)"
+
+def close_is_right(i): #Door open function
+    if i == "open":
+        return "wrong"
+    elif i == "keep closed":
+        return "correct"
+    else:
+        return "error (420)"
