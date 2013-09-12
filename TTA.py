@@ -120,6 +120,7 @@ if leavethere_is_right(move) == "correct":
 elif leavethere_is_right(move) == "wrong":
     #System for more than one option using random numbers
     rint = random()
+    #Makes it option A 25% of the time, and B 75% of the time
     if rint > 0 and rint < .25:
         print"You start to brush your teeth, everything is fine"
         print"You continue through your day as normal"
@@ -130,7 +131,7 @@ elif leavethere_is_right(move) == "wrong":
     else:
         print"You look in the mirror and notice you are a turtle"
         print"Turtles have no teeth"
-        print"You ingest all your toothpaste and die"
+        print"You accidentally ingest all your toothpaste and die"
         print"You are dead"
         blank = raw_input("Press Enter to close...")
         sys.exit()
@@ -142,7 +143,7 @@ print" "
 
 #Part 3 of bathroom sequence
 print"Being disgusted with the toothbrush, you notice the shower and a box of pop tarts"
-move = raw_input("Do you want to (turn on or keep off)? ")
+move = raw_input("What do you want to do with the shower (turn on or keep off)? ")
 if keep_off_is_right(move) == "correct":
     print"You ignore the shower, and continue searching"
 elif keep_off_is_right(move) == "wrong":
