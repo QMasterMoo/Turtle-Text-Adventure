@@ -28,7 +28,7 @@ blank = "doesn't matter"
 menu_correct = False
  
  
- #Starts menu module
+#Starts menu module
 #Dom rewrote menu function, and added some spacing
 while not menu_correct:
     print" "
