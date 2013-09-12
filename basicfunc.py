@@ -128,7 +128,7 @@ def turn_on_is_right(i): #Turning on is right
     else:
         return  "Error (420)"
 
-def turn_off_is_right(i): #Keeping off is right
+def keep_off_is_right(i): #Keeping off is right
     if i == "turn on":
         return "wrong"
     elif i == "keep off":
