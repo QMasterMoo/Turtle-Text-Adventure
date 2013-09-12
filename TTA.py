@@ -142,7 +142,7 @@ else:
 print" "
 
 #Part 3 of bathroom sequence
-print"Being disgusted with the toothbrush, you notice the shower and a box of pop tarts"
+print"Being disgusted with the toothbrush, you notice the shower and a box of kellogs brand pop tarts"
 move = raw_input("What do you want to do with the shower (turn on or keep off)? ")
 if keep_off_is_right(move) == "correct":
     print"You ignore the shower, and continue searching"
