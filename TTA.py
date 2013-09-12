@@ -7,6 +7,7 @@
 from basicfunc import *
 import time
 import sys
+from random import *
 
 #Sleep countdown timers, change to 0 for testing
 sleepn1 = -1
@@ -77,8 +78,6 @@ print"Your alarm clock goes off, it is 6:47 a.m."
 print"You think you yourself, why did that go off so early?"
 print"Work starts at 8:30 a.m., you have about an hour to get ready."
 move = raw_input("You turn over and see your alarm clock, do you (hit snooze or wake up) ")
-stringit(move)
-lowerit(move)
 #Starting main if block, see 'example structure.py' for better examples
 if wake_up_is_right(move) == "correct": 
     print"You stand up, and walk towards the bathroom door"
@@ -114,25 +113,54 @@ print" "
 
 #Part 2 of bathroom sequence
 print"After entering the bathroom, you notice your toothbrush"
-print"You pick up your toothbrush"
+print"You look at your toothbrush"
 move = raw_input("You ponder, then decide to (pick up or leave there) ")
 if leavethere_is_right(move) == "correct":
     print"You notice that the toothbrush has bird poop on it, and leave it there"
 elif leavethere_is_right(move) == "wrong":
-    print"You start to brush your teeth, everything is fine"
-    print"You continue through your day as normal"
-    print"Months later, you die of bird flu"
-    print"You are dead"
-    blank = raw_input("Press Enter to close...")
-    sys.exit()    
+    #System for more than one option using random numbers
+    rint = random()
+    if rint > 0 and rint < .5:
+        print"You start to brush your teeth, everything is fine"
+        print"You continue through your day as normal"
+        print"Months later, you die of bird flu"
+        print"You are dead" 
+        blank = raw_input("Press Enter to close...")
+        sys.exit()  
+    else:
+        print"You look in the mirror and notice you are a turtle"
+        print"Turtles have no teeth"
+        print"You ingest all your toothpaste and die"
+        print"You are dead"
+        blank = raw_input("Press Enter to close...")
+        sys.exit()
 else:
     print"Error (420-3), was your spelling right?"
     blank = raw_input("Press Enter to close...")
     sys.exit()
 print" "
 
-print"Temporary end"
-time.sleep(sleepn1)
+#Part 3 of bathroom sequence
+print"Being disgusted with the toothbrush, you notice the shower and a box of pop tarts"
+move = raw_input("Do you want to (turn on or keep off)? ")
+if keep_off_is_right(move) == "correct":
+    print"You ignore the shower, and continue searching"
+elif keep_off_is_right(move) == "wrong":
+    print"You turn on the shower, and get in"
+    print"After washing off, you die"
+    print"You are now dead"
+    blank = raw_input("Press Enter to close...")
+    sys.exit()
+else:
+    print"Error (420-4), was your spelling right?"
+    blank = raw_input("Press Enter to close...")   
+    sys.exit()
+    
+print"Temp end"
+blank = raw_input("Press Enter to close...")   
+sys.exit()
+
+
 
         
     
