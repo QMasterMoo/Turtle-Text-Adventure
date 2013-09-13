@@ -17,6 +17,9 @@ sleep5 = 5
 sleep10 = 10
 sleep20 = 20
 
+#Passcode var
+pc = "0"
+
 #Defines blank variable for no reason other than caution
 blank = "doesn't matter"
 
@@ -101,6 +104,9 @@ wvar = False
 if pc == "1":
     print"Starting at block 1"
     print" "
+    pc = "0"
+elif pc == "0":
+    print" "
 else:
     wvar = True
     
@@ -123,8 +129,7 @@ while not wvar:
         sys.exit()
     else:
         print"Error (420-1), was your spelling right?"
-        blank = raw_input("Press Enter to close...")
-        sys.exit()
+        blank = raw_input("Press Enter to continue...")
         print" "
 
 
@@ -132,6 +137,9 @@ while not wvar:
 wvar = False
 if pc == "2":
     print"Starting at block 2"
+    print" "
+    pc = "0"
+elif pc == "0":
     print" "
 else:
     wvar = True
@@ -151,8 +159,7 @@ while not wvar:
         sys.exit()
     else:
         print"Error (420-2), was your spelling right?"
-        blank = raw_input("Press Enter to close...")
-        sys.exit()    
+        blank = raw_input("Press Enter to continue...")  
         print" "
 
 
@@ -161,10 +168,14 @@ wvar = False
 if pc == "3":
     print"Starting at block 3"
     print" "
+    pc = "0"
+elif pc == "0":
+    print" "
 else:
     wvar = True
     
 while not wvar:
+    move = raw_input("Walking in the door, you notice your toothbrush on the sink, do you (pick up or leave there)? ")
     if leavethere_is_right(move) == "correct":
         print"You notice that the toothbrush has bird poop on it, and leave it there"
         wvar = True
@@ -188,8 +199,8 @@ while not wvar:
             sys.exit()
     else:
         print"Error (420-3), was your spelling right?"
-        blank = raw_input("Press Enter to close...")
-        sys.exit()
+        blank = raw_input("Press Enter to continue...")
+        print" "
 print" "
 
 
@@ -198,9 +209,12 @@ wvar = False
 if pc == "4":
     print"Starting at block 4"
     print" "
+    pc = "0"
+elif pc == "0":
+    print" "
 else:
     wvar = True
-    
+      
 while not wvar:
     #Part 3 of bathroom sequence
     print"Being disgusted with the toothbrush, you notice the shower and a box of kellogs brand pop tarts"
@@ -216,8 +230,8 @@ while not wvar:
         sys.exit()
     else:
         print"Error (420-4), was your spelling right?"
-        blank = raw_input("Press Enter to close...")   
-        sys.exit()
+        blank = raw_input("Press Enter to continue...")   
+        print" "
 print" " 
     
 print"Temp end"
