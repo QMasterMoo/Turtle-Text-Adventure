@@ -30,11 +30,10 @@ print"Welcome to Turtle-Text-Adventure"
 blank = "doesn't matter"
 menu_correct = False
  
- 
+print" "
 #Starts menu module
 #Dom rewrote menu function, and added some spacing
 while not menu_correct:
-    print" "
     print"What would you like to do?"
     print" "
     menu = raw_input("Your options are: 'start game' and 'how to play': ")
@@ -128,7 +127,7 @@ while not wvar:
         blank = raw_input("Press Enter to close...")
         sys.exit()
     else:
-        print"Error (420-1), was your spelling right?"
+        print"Error (420-1), was your spelling right? Please enter a valid choice."
         blank = raw_input("Press Enter to continue...")
         print" "
 
@@ -158,7 +157,7 @@ while not wvar:
         blank = raw_input("Press Enter to close...")
         sys.exit()
     else:
-        print"Error (420-2), was your spelling right?"
+        print"Error (420-2), was your spelling right? Please enter a valid choice."
         blank = raw_input("Press Enter to continue...")  
         print" "
 
@@ -198,7 +197,7 @@ while not wvar:
             blank = raw_input("Press Enter to close...")
             sys.exit()
     else:
-        print"Error (420-3), was your spelling right?"
+        print"Error (420-3), was your spelling right? Please enter a valid choice."
         blank = raw_input("Press Enter to continue...")
         print" "
 print" "
@@ -229,7 +228,7 @@ while not wvar:
         blank = raw_input("Press Enter to close...")
         sys.exit()
     else:
-        print"Error (420-4), was your spelling right?"
+        print"Error (420-4), was your spelling right? Please enter a valid choice."
         blank = raw_input("Press Enter to continue...")   
         print" "
 print" " 
