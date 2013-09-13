@@ -8,6 +8,7 @@ from basicfunc import *
 import time
 import sys
 from random import *
+from maze import *
 
 #Sleep countdown timers, change to 0 for testing
 sleepn1 = -1
