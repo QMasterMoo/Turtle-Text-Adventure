@@ -131,7 +131,9 @@ while not wvar:
         print"Error (420-1), was your spelling right? Please enter a valid choice."
         blank = raw_input("Press Enter to continue...")
         print" "
-
+print" "
+fav_food = raw_input("What is your favorite food %s? " % (name))
+print" "
 
 #Block 2
 wvar = False
@@ -161,7 +163,9 @@ while not wvar:
         print"Error (420-2), was your spelling right? Please enter a valid choice."
         blank = raw_input("Press Enter to continue...")  
         print" "
-
+print" "
+fav_color = raw_input("What is your favorite color %s? " % (name))
+print" "
 
 #Block 3
 wvar = False
@@ -202,7 +206,8 @@ while not wvar:
         blank = raw_input("Press Enter to continue...")
         print" "
 print" "
-
+fav_season = raw_input("What is your favorite season %s? " % (name))
+print" "
 
 #Block 4
 wvar = False
@@ -232,8 +237,16 @@ while not wvar:
         print"Error (420-4), was your spelling right? Please enter a valid choice."
         blank = raw_input("Press Enter to continue...")   
         print" "
+print" "
+fav_animal = raw_input("What is your favorite animal %s? " % (name))
 print" " 
-    
+print"%s's favorite food is %s" % (name, fav_food)
+print"%s's favorite color is %s" % (name, fav_color)
+print"%s's favorite season is %s" % (name, fav_season)
+print"%s's favorite animal is %s" % (name, fav_animal)
+print" "
+
+
 print"Temp end"
 blank = raw_input("Press Enter to close...")   
 sys.exit()
