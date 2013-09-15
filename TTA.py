@@ -132,7 +132,7 @@ while not wvar:
         blank = raw_input("Press Enter to continue...")
         print" "
 print" "
-fav_food = raw_input("What is your favorite food %s? " % (name))
+#fav_food = raw_input("What is your favorite food %s? " % (name))
 print" "
 
 #Block 2
@@ -164,7 +164,7 @@ while not wvar:
         blank = raw_input("Press Enter to continue...")  
         print" "
 print" "
-fav_color = raw_input("What is your favorite color %s? " % (name))
+#fav_color = raw_input("What is your favorite color %s? " % (name))
 print" "
 
 #Block 3
@@ -206,7 +206,7 @@ while not wvar:
         blank = raw_input("Press Enter to continue...")
         print" "
 print" "
-fav_season = raw_input("What is your favorite season %s? " % (name))
+#fav_season = raw_input("What is your favorite season %s? " % (name))
 print" "
 
 #Block 4
@@ -238,12 +238,12 @@ while not wvar:
         blank = raw_input("Press Enter to continue...")   
         print" "
 print" "
-fav_animal = raw_input("What is your favorite animal %s? " % (name))
+#fav_animal = raw_input("What is your favorite animal %s? " % (name))
 print" " 
-print"%s's favorite food is %s" % (name, fav_food)
-print"%s's favorite color is %s" % (name, fav_color)
-print"%s's favorite season is %s" % (name, fav_season)
-print"%s's favorite animal is %s" % (name, fav_animal)
+#print"%s's favorite food is %s" % (name, fav_food)
+#print"%s's favorite color is %s" % (name, fav_color)
+#print"%s's favorite season is %s" % (name, fav_season)
+#print"%s's favorite animal is %s" % (name, fav_animal)
 print" "
 
 
